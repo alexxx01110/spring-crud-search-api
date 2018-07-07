@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import com.alexm.crud.spring.service.ArticleService;
 import com.alexm.crud.spring.service.HibernateSearchService;
 
-@CrossOrigin(origins = { "http://localhost:8081", "http://alexm-quasar-app.herokuapp.com" }, maxAge = 6000)
+@CrossOrigin(origins = { "http://localhost:8080", "http://localhost:8081", "http://alexm-quasar-app.herokuapp.com" }, maxAge = 6000)
 @RestController
 public class ArticleController {
 
