@@ -39,13 +39,13 @@ public class AppConfig {
 
       Properties props = new Properties();
       // Setting JDBC properties
-      props.put(DRIVER, env.getProperty("mysql.driver"));
-      props.put(URL, env.getProperty("mysql.url"));
-      props.put(USER, env.getProperty("mysql.user"));
-      props.put(PASS, env.getProperty("mysql.password"));
+      props.put(DRIVER, env.getProperty("pgsql.driver"));
+      props.put(URL, env.getProperty("pgsql.url"));
+      props.put(USER, env.getProperty("pgsql.user"));
+      props.put(PASS, env.getProperty("pgsql.password"));
 
       // Setting Hibernate properties
-      props.put(DIALECT, env.getProperty("hibernate.dialect"));
+      props.put(DIALECT, env.getProperty("pgsql.dialect"));
       props.put(SHOW_SQL, env.getProperty("hibernate.show_sql"));
       props.put(HBM2DDL_AUTO, env.getProperty("hibernate.hbm2ddl.auto"));
 
